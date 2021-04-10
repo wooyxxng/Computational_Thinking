@@ -1,0 +1,7 @@
+# 53p 06.
+
+mouse=15000
+keyBoard=23000
+speaker=30000
+
+print("당신이 지불해야 할 금액은",mouse+keyBoard+speaker,"원 입니다.")
