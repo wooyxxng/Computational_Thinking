@@ -1,0 +1,7 @@
+#54p 11.
+
+presentPrice=50000
+rate=1.06
+lastPrice=presentPrice*rate**10
+
+print(lastPrice)
