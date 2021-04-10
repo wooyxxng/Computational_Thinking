@@ -1,0 +1,6 @@
+#54p 10.
+
+presentPrice=34900
+nextPrice=presentPrice*1.12
+
+print(nextPrice)
