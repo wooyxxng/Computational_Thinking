@@ -1,0 +1,7 @@
+# 54p 12.
+
+rate=1.05
+price=rate**20
+money=300*price
+
+print("20년 후의 물가는 현재에 비해",price,"배 증가하였고\n등록금은",money,"만원 입니다.")
