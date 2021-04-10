@@ -1,0 +1,8 @@
+#54p 07.
+
+kor=95
+eng=87
+sci=100
+sum=kor+eng+sci
+avr=sum/3
+print("합계 점수:",sum," ","평균 점수:",avr)
