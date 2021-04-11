@@ -1,0 +1,14 @@
+#202
+#정수를 입력받아 홀수인지 짝수인지 판단하는 프로그램
+
+def f(num):
+    if num%2==0:
+        y="짝수"
+    else :
+        y="홀수"
+    return y
+
+num=int(input("숫자를 입력하세요 : "))
+y=f(num)
+
+print(num,"은",y,"입니다.")
