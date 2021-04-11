@@ -1,0 +1,16 @@
+#129p 05.
+#반지름 입력받아서 원의 넓이 구하고 그리기
+
+import turtle as t
+import math as m
+
+t.shape('turtle')
+t.shapesize(1)
+t.pencolor('pink')
+t.width(1)
+
+r=int(input("반지름 길이: "))
+s=m.pi*r**2
+print("원의 넓이는 %d입니다."%s)
+
+t.circle(r)
