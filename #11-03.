@@ -1,0 +1,10 @@
+#227p 03,
+#1초마다 숫자1부터 숫자10까지 출력하기
+
+import time
+
+i=0
+while i<10 :
+    i+=1
+    print("숫자",i)
+    time.sleep(1)
