@@ -1,0 +1,22 @@
+#229p 15.
+#반지름을 10부터 100까지 10씩 변화시키면서 10개의 원 그리기
+
+#for문
+import turtle as t
+
+t.shape('classic')
+t.shapesize(1)
+
+for r in range(10,101,10):
+    t.circle(r)
+
+#while문
+import turtle as t
+
+t.shape('classic')
+t.shapesize(1)
+
+r=10
+while r<=100 :
+    t.circle(r)
+    r+=10
