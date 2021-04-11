@@ -1,0 +1,5 @@
+#229p 10.
+#for문으로 등차수열 만들기
+
+for i in range (30,51,3) :
+    print(i)
