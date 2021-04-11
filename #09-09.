@@ -1,0 +1,18 @@
+#181p 09.
+#출생연도를 입력받아서 나이를 판별하여 소속을 예측하는 프로그램
+
+year=int(input("출생연도를 입력하세요 > "))
+age=2021-year+1
+
+if age>=1 and age<8 :
+    print("저는 당신이 어린이일 것이라고 생각합니다.")
+elif age>=8 and age<14 :
+    print("저는 당신이 초등학생일 것이라고 생각합니다.")
+elif age>=14 and age<17 :
+    print("저는 당신이 중학생일 것이라고 생각합니다.")
+elif age>=17 and age<20 :
+    print("저는 당신이 고등학생일 것이라고 생각합니다.")
+elif age>=20 and age<27 :
+    print("저는 당신이 대학생일 것이라고 생각합니다.")
+else :
+    print("저는 당신이 직장인일 것이라고 생각합니다.")
