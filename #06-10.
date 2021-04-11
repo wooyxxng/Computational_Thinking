@@ -1,0 +1,8 @@
+#108p 10.
+
+import calendar
+
+year=int(input("출생연도 입력: "))
+month=int(input("출생월 입력: "))
+
+calendar.prmonth(year,month)
