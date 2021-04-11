@@ -1,0 +1,14 @@
+#152p 06.
+#저축액을 입력받아 1년 후의 이자와 원리금을 출력해주는 프로그램
+
+print("=== 원리금 계산 프로그램 ===")
+
+save=int(input("저축금액 입력: "))
+i=0.0375*save
+tax=0.15*i
+final=save+i-tax
+
+print("원금: %9d 원"%save)
+print("이자: %9.0f 원"%i)
+print("세금: %9.0f 원"%tax)
+print("최종: %9.d 원"%final)
