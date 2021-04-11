@@ -1,0 +1,13 @@
+#181p 07.
+#퀴즈, 중간고사, 기말고사 점수 입력받아 최종 점수를 계산하여 P/F 여부를 알려주는 프로그램
+#최종 점수가 70점 이상이면 PASS, 그렇지 않으면 FAIL로 안내한다.
+
+quiz=int(input("퀴즈 점수를 입력하세요 > "))
+mid=int(input("중간고사 점수를 입력하세요 > "))
+final=int(input("기말고사 점수를 입력하세요 > "))
+score=quiz*0.2+mid*0.3+final*0.5
+
+if score >=70 :
+    print("PASS")
+else :
+    print("FAIL")
