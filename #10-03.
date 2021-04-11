@@ -1,0 +1,11 @@
+#202p 03.
+#원의 반지름을 함수의 파라미터로 입력받아 원의 넓이를 구하는 프로그램
+
+def circle(r):
+    pi=3.14
+    s=pi*r**2
+    return s
+
+r=int(input("반지름을 입력하세요 > "))
+s=circle(r)
+print(s)
