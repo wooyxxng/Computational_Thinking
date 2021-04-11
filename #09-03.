@@ -1,0 +1,8 @@
+#180p 03.
+#한국 시각 입력받아 프랑스 시각으로 변환하는 프로그램
+
+hour=int(input("지금 한국은 몇 시입니까? > "))
+min=int(input("지금 한국은 몇 분입니까? > "))
+franceHour=(hour+8)%24
+
+print("지금 프랑스는 %d시 %d분 입니다."%(franceHour,min))
