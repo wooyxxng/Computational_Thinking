@@ -1,0 +1,24 @@
+#182p 10.
+#키, 몸무게를 입력받아 표준 몸무게를 계산한 후 판단 내용과 진단 내용을 출력한다
+
+Height=float(input("키(cm)를 입력하세요 : "))
+Weight=float(input("몸무게(kg)를 입력하세요 : "))
+StandardWeight=float((Height-100)*0.9)
+
+Ratio=float((Weight/StandardWeight)*100)
+
+if Ratio >= 130 :
+    print("당신은 [ 비만 ]입니다.")
+    print("식사량을 줄이고 주 3일 이상 운동하세요.")
+    
+elif 115 <= Ratio < 130 :
+    print("당신은 [ 과체중 ]입니다.")
+    print("약간 살이 쪘네요. 주 2일은 운동하세요.")
+    
+elif 85 <= Ratio < 115 :
+    print("당신은 [ 정상 몸무게 ]입니다.")
+    print("지금 체중을 잘 유지하세요.")
+    
+else :
+    print("당신은 [ 저체중 ]입니다.")
+    print("제 때에 많이 먹고 운동도 하세요.")
