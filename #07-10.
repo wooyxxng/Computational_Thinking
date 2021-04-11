@@ -1,0 +1,18 @@
+#130p 10.
+#거북이가 빠른 속도로 앞으로 이동하며 원을 10개 그리는 프로그램
+
+import turtle as t
+
+t.shape('turtle')
+t.shapesize(1)
+t.pencolor('pink')
+t.speed(0)
+
+t.penup()
+t.goto(-200,0)
+t.pendown()
+for i in range (10):
+    t.circle(25)
+    t.penup()
+    t.fd(50)
+    t.pendown()
