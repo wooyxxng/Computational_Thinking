@@ -1,0 +1,10 @@
+#202p 06.
+
+def f(b,h):
+    s=1/2*b*h
+    return s
+
+b=int(input("삼각형의 밑변을 입력하세요 : "))
+h=int(input("삼각형의 높이를 입력하세요 : "))
+s=f(b,h)
+print("삼각형의 넓이는 ",s,"입니다.")
