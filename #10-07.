@@ -1,0 +1,20 @@
+#202p 07.
+#점수를 입력받아 학점을 선별하여 알려주는 프로그램
+
+def f(score):
+    if score<=100 and score>=90 :
+        grade='A'
+    elif score<90 and score>=80 :
+        grade='B'
+    elif score<80 and score>=70 :    
+        grade='C'
+    elif score<70 and score>=60 :
+        grade='D'
+    else:
+        grade='F'
+    return grade
+
+score=int(input("점수를 입력하세요 : "))
+grade=f(score)
+
+print("당신의 학점은",grade,"입니다.")
