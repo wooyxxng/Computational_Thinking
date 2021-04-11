@@ -1,0 +1,24 @@
+#130p 08.
+#좌표평면 그리고 중앙에 (0,0) 표시하기
+
+import turtle as t
+
+t.shape("classic")
+t.shapesize(1)
+t.width(1)
+
+t.penup()
+t.goto(0,0)
+t.write("(0,0)")
+t.goto(0,200)
+t.write("y")
+t.pendown()
+t.goto(0,-200)
+
+t.penup()
+t.goto(-200,0)
+t.pendown()
+t.goto(200,0)
+t.write("x")
+t.penup()
+t.goto(0,0)
