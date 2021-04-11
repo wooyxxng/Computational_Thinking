@@ -1,0 +1,11 @@
+#180p 01.
+#정수 입력 받아서 양수, 음수, 0 판단하기
+
+num=int(input("정수를 입력하세요: "))
+
+if num>0:
+    print("%d는 양수입니다."%num)
+elif num<0:
+    print("%d는 음수입니다."%num)
+else:
+    print("%d는 0입니다."%num)
