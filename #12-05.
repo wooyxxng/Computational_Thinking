@@ -1,0 +1,99 @@
+#소수 판별하기
+
+#소수 판별 - while문
+n=int(input("양의 정수를 입력하세요 > "))
+success=True
+t=2
+
+while t<n :
+    if n%t==0:
+        success=False
+        break
+    t+=1
+
+if success == True :
+    print("%d는 소수입니다."%n)
+else :
+    print("%d는 소수가 아닙니다."%n)
+
+#소수 판별 - for문
+n=int(input("양의 정수를 입력하세요 > "))
+success=True
+
+for t in range(2,n,1):
+    if n%t==0:
+        success=False
+        break
+        
+if success == True :
+    print("%d는 소수입니다."%n)
+else :
+    print("%d는 소수가 아닙니다."%n)
+    
+#소수 판별 - for~else문
+n=int(input("양의 정수를 입력하세요 > "))
+
+for t in range(2,n,1):
+    if n%t==0:
+        print("%d는 %d로도 나누어지므로 소수가 아닙니다."%(n,t))
+        break
+else:
+    print("%d는 소수입니다."%n)
+    print("1과 자기자신 %d로만 나누어집니다."%n)
+
+#소수 판별 - while문, 함수 사용
+def prime(n):
+    success=True
+    t=2
+    while t<n: 
+        if n%t==0 :
+            return False
+        t+=1
+    return True
+
+n=int(input("양의 정수를 입력하세요 > "))
+result=prime(n)
+
+if result==True :
+    print("%d는 소수입니다."%n)
+else :
+    print("%d는 소수가 아닙니다."%n)
+    
+#소수 판별 - for문, 함수 사용
+def prime(n):
+    success=True
+    for t in range(2,n,1):
+        if n%t==0 :
+            return False
+    return True
+
+n=int(input("양의 정수를 입력하세요 > "))
+result=prime(n)
+
+if result==True :
+    print("%d는 소수입니다."%n)
+else :
+    print("%d는 소수가 아닙니다."%n)
+
+#양의 정수 N을 입력 받아 1부터 N까지의 자연수 중에서 소수들을 모두 찾아 출력
+#그 소수들의 개수와 합계를 구하는 프로그램
+def prime(n):
+    success=True
+    for t in range(2,n,1):
+        if n%t==0 :
+            return False
+    return True
+
+count=0
+sum=0
+
+n=int(input("양의 정수를 입력하세요 > "))
+
+for t in range(2,n,1):
+    if prime(t)==True :
+        print("%d는 소수입니다."%t)
+        count+=1
+        sum+=t
+        
+print("소수의 개수:",count)
+print("모든 소수의 합:",sum)
